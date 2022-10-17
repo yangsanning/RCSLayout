@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--圆形-->
+    <attr name="rcs_circle" format="boolean" />
+
+    <!--全部圆角半径-->
+    <attr name="rcs_corner" format="integer|dimension" />
+    <!--针对各个角的半径-->
+    <attr name="rcs_cornerTopLeft" format="integer|dimension" />
+    <attr name="rcs_cornerTopRight" format="integer|dimension" />
+    <attr name="rcs_cornerBottomLeft" format="integer|dimension" />
+    <attr name="rcs_cornerBottomRight" format="integer|dimension" />
+
+    <!--裁切大小, 非圆形时需要设置才有阴影-->
+    <attr name="rcs_clip" format="integer|dimension" />
+    <!--裁切大小(左), 非圆形时需要设置才有阴影-->
+    <attr name="rcs_clipLeft" format="integer|dimension" />
+    <!--裁切大小(上), 非圆形时需要设置才有阴影-->
+    <attr name="rcs_clipTop" format="integer|dimension" />
+    <!--裁切大小(右), 非圆形时需要设置才有阴影-->
+    <attr name="rcs_clipRight" format="integer|dimension" />
+    <!--裁切大小(下), 非圆形时需要设置才有阴影-->
+    <attr name="rcs_clipBottom" format="integer|dimension" />
+
+    <!-- 阴影颜色-->
+    <attr name="rcs_shadowColor" format="color" />
+    <!-- 阴影大小-->
+    <attr name="rcs_shadowSize" format="integer|dimension" />
+    <!-- 阴影大小(左)-->
+    <attr name="rcs_shadowSizeLeft" format="integer|dimension" />
+    <!-- 阴影大小(上)-->
+    <attr name="rcs_shadowSizeTop" format="integer|dimension" />
+    <!-- 阴影大小(右)-->
+    <attr name="rcs_shadowSizeRight" format="integer|dimension" />
+    <!-- 阴影大小(下)-->
+    <attr name="rcs_shadowSizeBottom" format="integer|dimension" />
+
+    <!-- 覆盖颜色-->
+    <attr name="rcs_cornerOverlayColor" format="color" />
+
+    <!-- RCSHelper 真正用于解析的属性-->
+    <declare-styleable name="RCSAttrs">
+        <attr name="rcs_circle" />
+
+        <attr name="rcs_corner" />
+        <attr name="rcs_cornerTopLeft" />
+        <attr name="rcs_cornerTopRight" />
+        <attr name="rcs_cornerBottomLeft" />
+        <attr name="rcs_cornerBottomRight" />
+
+        <attr name="rcs_clip" />
+        <attr name="rcs_clipLeft" />
+        <attr name="rcs_clipTop" />
+        <attr name="rcs_clipRight" />
+        <attr name="rcs_clipBottom" />
+
+        <attr name="rcs_shadowColor" />
+        <attr name="rcs_shadowSize" />
+        <attr name="rcs_shadowSizeLeft" />
+        <attr name="rcs_shadowSizeTop" />
+        <attr name="rcs_shadowSizeRight" />
+        <attr name="rcs_shadowSizeBottom" />
+
+        <attr name="rcs_cornerOverlayColor" />
+    </declare-styleable>
+
+    <!-- 用于xml布局-->
+    <declare-styleable name="RCSLayout">
+        <attr name="rcs_circle" />
+
+        <attr name="rcs_corner" />
+        <attr name="rcs_cornerTopLeft" />
+        <attr name="rcs_cornerTopRight" />
+        <attr name="rcs_cornerBottomLeft" />
+        <attr name="rcs_cornerBottomRight" />
+
+        <attr name="rcs_clip" />
+        <attr name="rcs_clipLeft" />
+        <attr name="rcs_clipTop" />
+        <attr name="rcs_clipRight" />
+        <attr name="rcs_clipBottom" />
+
+        <attr name="rcs_shadowColor" />
+        <attr name="rcs_shadowSize" />
+        <attr name="rcs_shadowSizeLeft" />
+        <attr name="rcs_shadowSizeTop" />
+        <attr name="rcs_shadowSizeRight" />
+        <attr name="rcs_shadowSizeBottom" />
+
+        <attr name="rcs_cornerOverlayColor" />
+    </declare-styleable>
+</resources>

@@ -6,13 +6,50 @@
     android:layout_height="match_parent"
     tools:context="wot.demo.rcslayout.MainActivity">
 
-    <TextView
+    <wot.view.rcslayout.RCSLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rcs_circle="true"
+        app:rcs_shadowColor="#99000000"
+        app:rcs_shadowSize="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/wot"
+            tools:ignore="ContentDescription" />
+    </wot.view.rcslayout.RCSLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <wot.view.rcslayout.RCSLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/guideline"
+        app:rcs_clip="20dp"
+        app:rcs_corner="20dp"
+        app:rcs_shadowColor="#99ff0000"
+        app:rcs_shadowSize="20dp">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/wot"
+            tools:ignore="ContentDescription" />
+    </wot.view.rcslayout.RCSLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
